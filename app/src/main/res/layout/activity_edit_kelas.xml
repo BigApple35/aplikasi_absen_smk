@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img_4"
+    android:orientation="vertical"
+    tools:context=".guru.EditSekretaris">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/kelasRecycler"
+            android:layout_width="match_parent"
+            android:layout_height="484dp"
+            android:layout_marginTop="160dp"
+            android:paddingStart="20dp"
+            android:paddingTop="20dp"
+            android:paddingEnd="20dp"
+            tools:listitem="@layout/kelas_card">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+        <Button
+            android:id="@+id/addKelas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/buttonadd"
+            android:gravity="center_horizontal"
+            android:padding="20dp"
+            android:text="Tambah Kelas"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img"
+    android:orientation="vertical"
+    tools:context=".guru.Absen.AbsenSiswa">
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_gravity="center"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Daftar Siswa"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/textView9">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/linearLayout8"
+                android:layout_width="match_parent"
+                android:paddingHorizontal="20dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginTop="30dp"
+                    android:fontFamily="@font/poppins"
+                    android:text="Jam ke"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/textJamKe"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/roundedbox"
+                    android:hint="Ex : 10, 11, 12"
+                    android:inputType="text"
+                    android:textAlignment="center" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="20dp"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout8">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginTop="30dp"
+                    android:fontFamily="@font/poppins"
+                    android:text="Sampai Jam Ke"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/textSampaiJamKe"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/roundedbox"
+                    android:hint="Ex : 10, 11, 12"
+                    android:inputType="text"
+                    android:textAlignment="center" />
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/absenSiswaRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="484dp"
+                android:layout_gravity="center"
+                android:paddingStart="5dp"
+                android:paddingTop="20dp"
+                android:paddingEnd="5dp"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout7"
+                tools:listitem="@layout/absen_card">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/submitAbsenSiswaButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/buttonadd"
+        android:gravity="center_horizontal"
+        android:padding="20dp"
+        android:layout_marginBottom="20dp"
+        android:text="Kirim Absensi"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

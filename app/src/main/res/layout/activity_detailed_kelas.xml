@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/img"
+    tools:context=".guru.AddKelas">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/detailedKelasTitle"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Kelas"
+            android:textColor="@color/black"
+            android:textSize="36sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout4"
+            android:layout_width="match_parent"
+            android:paddingHorizontal="20dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:orientation="vertical"
+            app:layout_constraintStart_toStartOf="@id/detailedKelasTitle"
+            app:layout_constraintEnd_toEndOf="@+id/detailedKelasTitle"
+            app:layout_constraintTop_toBottomOf="@id/detailedKelasTitle">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/poppins"
+                android:text="kelas"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/textDetailedKelas"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="0dp"
+                android:background="@drawable/roundedbox"
+                android:hint="Ex : 10, 11, 12"
+                android:inputType="text"
+                android:textAlignment="center" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout6"
+            android:layout_width="match_parent"
+            android:paddingHorizontal="20dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="@+id/linearLayout4"
+            app:layout_constraintStart_toStartOf="@+id/linearLayout4"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout4">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/poppins"
+                android:text="jurusan"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/textDetailedJurusan"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="0dp"
+                android:background="@drawable/roundedbox"
+                android:hint="Ex : RPL 1, DKV 2, EI 2"
+                android:inputType="text"
+                android:textAlignment="center" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout5"
+            android:layout_width="match_parent"
+            android:layout_marginTop="30dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="@+id/linearLayout6"
+            app:layout_constraintStart_toStartOf="@+id/linearLayout6"
+            app:layout_constraintTop_toBottomOf="@id/linearLayout6">
+
+            <Button
+                android:id="@+id/updateKelas"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="0dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/button_rounded"
+                android:backgroundTint="#19B820"
+                android:text="Perbarui"
+                android:textColor="@android:color/white" />
+
+            <Button
+                android:id="@+id/deleteKelas"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="0dp"
+                android:background="@drawable/button_rounded"
+                android:backgroundTint="#FF0000"
+                android:text="Hapus"
+                android:textColor="@android:color/white" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            app:layout_constraintStart_toStartOf="@id/linearLayout5"
+            app:layout_constraintEnd_toEndOf="@id/linearLayout5"
+            android:layout_marginTop="64dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Data Kelas"
+            android:textColor="@color/black"
+            android:textSize="36sp"
+            app:layout_constraintTop_toBottomOf="@id/linearLayout5" />
+
+        <Button
+            android:id="@+id/lihatSekretaris"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/button_rounded"
+            android:text="Lihat Sekretaris"
+            android:textColor="@android:color/white"
+            app:layout_constraintEnd_toEndOf="@+id/textView8"
+            app:layout_constraintStart_toStartOf="@+id/textView8"
+            app:layout_constraintTop_toBottomOf="@id/textView8" />
+
+        <Button
+            android:id="@+id/lihatSiswa"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button_rounded"
+            android:text="Lihat Siswa"
+            android:textColor="@android:color/white"
+            app:layout_constraintEnd_toEndOf="@+id/lihatSekretaris"
+            app:layout_constraintStart_toStartOf="@+id/lihatSekretaris"
+            app:layout_constraintTop_toBottomOf="@id/lihatSekretaris" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HalamanAwal">
+
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="333dp"
+        android:layout_height="232dp"
+        android:layout_marginTop="52dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/banner_intro" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/poppins_bold"
+        android:textColor="#000"
+        android:textSize="28sp"
+        android:text="Selamat Datang!"
+        app:layout_constraintEnd_toEndOf="@+id/imageView2"
+        app:layout_constraintStart_toStartOf="@+id/imageView2"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:fontFamily="@font/poppins"
+        android:textSize="18sp"
+        android:text="Absenku adalah sebuah aplikasi yang memudahkan para guru untuk mengabsen para siswanya. Absenku memiliki banyak fitur yang membuat mengabsen yang sungguh luar biasa."
+        app:layout_constraintEnd_toEndOf="@+id/textView4"
+        app:layout_constraintStart_toStartOf="@+id/textView4"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <Button
+        android:id="@+id/buttonLogin"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        app:layout_constraintEnd_toEndOf="@+id/textView3"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:fontFamily="@font/poppins_bold"
+        android:textSize="18sp"
+        android:background="@drawable/button_blue_rounded"
+        android:text="Login"
+        app:layout_constraintStart_toStartOf="@+id/textView3"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <Button
+        android:id="@+id/buttonSignUp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/buttonLogin"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:fontFamily="@font/poppins_bold"
+        android:textSize="18sp"
+        android:background="@drawable/button_blue_rounded_outline"
+        android:text="Sign Up"
+        app:layout_constraintStart_toStartOf="@+id/buttonLogin"
+        app:layout_constraintTop_toBottomOf="@+id/buttonLogin" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+

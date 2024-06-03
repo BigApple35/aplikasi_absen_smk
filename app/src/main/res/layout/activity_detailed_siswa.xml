@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/img_4"
+    tools:context=".guru.AddKelas">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kelas"
+                android:id="@+id/detailedSiswaTitle"
+                android:textColor="@color/black"
+                android:textSize="36sp"
+                android:fontFamily="@font/poppins_bold"
+                android:layout_gravity="center"
+                android:layout_marginTop="160dp"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="NIS"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:fontFamily="@font/poppins"
+                    android:layout_gravity="left"
+                    android:layout_marginTop="30dp"/>
+
+                <EditText
+                    android:id="@+id/textNisSiswaUpdate"
+                    android:layout_width="350dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/roundedbox"
+                    android:inputType="text"
+                    android:hint="Masukkan NIS"
+                    android:textAlignment="center"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nama"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:fontFamily="@font/poppins"
+                    android:layout_gravity="left"
+                    android:layout_marginTop="30dp"/>
+
+                <EditText
+                    android:id="@+id/textNamaSiswaUpdate"
+                    android:layout_width="350dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/roundedbox"
+                    android:inputType="text"
+                    android:hint="Masukkan Nama"
+                    android:textAlignment="center"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Jenis Kelamin"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:fontFamily="@font/poppins"
+                    android:layout_gravity="left"
+                    android:layout_marginTop="30dp"/>
+
+                <RadioGroup
+                    android:layout_width="350dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/genderGroupUpdate"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="0dp"
+                    android:orientation="vertical"
+                    >
+
+                    <RadioButton
+                        android:id="@+id/maleUpdate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins"
+                        android:textSize="29sp"
+                        android:text="Laki-laki" />
+
+                    <RadioButton
+                        android:id="@+id/femaleUpdate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins"
+                        android:textSize="29sp"
+                        android:text="Perempuan" />
+                </RadioGroup>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Alamat"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:fontFamily="@font/poppins"
+                    android:layout_gravity="left"
+                    android:layout_marginTop="30dp"/>
+
+                <EditText
+                    android:id="@+id/textAddressSiswaUpdate"
+                    android:layout_width="350dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/roundedbox"
+                    android:inputType="text"
+                    android:hint="Masukkan Alamat"
+                    android:textAlignment="center"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:orientation="horizontal"
+                android:gravity="center_horizontal"
+                >
+
+                <Button
+                    android:id="@+id/btnUpdateSiswa"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginRight="30dp"
+                    android:background="@drawable/button_rounded"
+                    android:backgroundTint="#4CAF50"
+                    android:text="Perbarui"
+                    android:textColor="@android:color/white" />
+
+                <Button
+                    android:id="@+id/btnDeleteSiswa"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/button_rounded"
+                    android:backgroundTint="#FF0000"
+                    android:text="Hapus"
+                    android:textColor="@android:color/white" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
